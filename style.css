@@ -1,0 +1,459 @@
+/*-------------------IMPORTANDO-CONTEÚDO-DE-FORA----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Bebas+Neue&family=Oswald:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /*border: 2px solid rgb(255, 0, 0);*/
+}
+
+/*-------------------ROLAGEM-DO-SITE----------------*/
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/*-------------------CORPO-DO-SITE----------------*/
+
+body{
+    background-color: #13072e;
+}
+
+/*-------------------CABEÇALHO----------------*/
+
+.header{
+    /*Tag pai, todas as alterações herdam desta*/
+    /*Edição de tag parte do flexbox*/
+    list-style: none;
+    height: 5vw;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+/*Imagem do topo do navegador*/
+img#logoNav{
+    height: 5vw;
+}
+
+a.btnNav{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(167, 167, 167, 0.8);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a.btnNav:after{
+    content: "";
+    position: absolute;
+    background-color: #0cc0df;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a.btnNav:hover{
+    color: rgb(255,255,255);
+}
+a.btnNav:hover:after{
+    width: 100%;
+}
+
+/*-------------------BOTÃO-DO-LOGIN----------------*/
+
+.menu-login {
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #0cc0df;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.menu-login span {
+    margin-right:10px;    
+    color: rgb(255,255,255);
+}
+.menu-login:active{
+    transform: scale(0.96);
+}
+
+
+/*-----------------SLIDESHOW-------------------*/
+
+div.slide{
+    z-index: 0;
+}
+[data-component="slideshow"] .slide{
+    display: none;
+}
+[data-component="slideshow"] .slide.active{
+    display: block;
+}
+img.imgSlide{
+    width: 100%;
+    height: 36vw;
+}
+
+/*-------------------HOME----------------*/
+
+div.home{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    background-color: none;
+}
+p.txtHome{
+    color: #fff;
+    margin: 2vw;
+    font-size: 1.3em;    
+    text-align: justify;
+}
+hr.linhaSeparacaoHome{
+    border: none;
+    margin-top: 0%;
+}
+div.separacaoHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(5vw,10vw,20vw);
+    background-color: #4274fd;
+}
+section.home{
+    background-color: color-mix(in srgb-linear, color percentage, color percentage);
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+span{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9e9e9e;
+    text-align: center
+}
+/*Estilizando início da página*/
+h3.Home{
+    margin: 4%;
+    font-size: 4vw;
+    font-family: Antonio;
+}
+div.imgHome{
+    padding-top: 10%;
+    margin-left: 2%;
+}
+div.containerHome
+{
+    padding: 5%;
+}
+img#homepage{
+    border: none;
+    width: 25vw;
+    height: 25vw;
+}
+
+/*--------------CASES-------------------*/
+
+h3.tituloCases{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #026b9b;
+    text-align: left;
+    padding-left: 10%;
+}
+div.casesLogo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+}
+div.imgCasesLogo {
+    padding: 0%;   
+}
+div.casesWebSites{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.imgCasesWebSites {
+    padding: 5%;  
+}
+div.casesAppWeb{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.imgCasesAppWeb {
+    padding: 0%;
+}
+img#cases{
+    justify-content: center;
+    border: 0.1vw solid #FCF6DB;
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+img#caseswebsite{
+    justify-content:center;
+    border: 0.1vw solid #FCF6DB;
+    width: 20%;
+    height: 15%;
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+img#casesappweb{
+    justify-content:center;
+    border: 0.1vw solid #FCF6DB;
+    width: 20%;
+    height: 10%;
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------CLIENTES----------------*/
+
+div.imgClientes
+{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+img#clientes{
+    border: 0.1vw solid #FCF6DB;
+    width: 100%;
+    height: 30vw;
+}
+/*-----------------QUEM-SOMOS--------------*/
+
+h3.titulo{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    font-size: 6vw;
+    color: #0cc0df;
+    font-family:'Courier New', Courier, monospace;
+}
+div.quemSomos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: none;
+    margin-bottom: 5%;
+}
+section.quemSomos{
+    background-color:#190a3b;
+    width: 70%;
+    border-radius: 2%;
+    margin-top: -3%;    
+}
+/*Estilo do texto referente ao conteúdo de "Quem somos"*/
+p.txtQuemSomos{
+    color: #fff;
+    margin: 2vw;
+    font-size: 1.3em;
+    text-align: justify;    
+}
+p.txtQuemSomosValores{
+    color: #fff;
+    margin: 2vw;
+    font-size: 1.3em;
+    text-align: center;    
+}
+hr.linhaSeparacaoQuemSomos{
+    border: 0.2vw solid none;
+    margin-top: 2%;
+}
+div.separacaoQuemSomos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(5vw,10vw,20vw);
+    background-color: none;
+}
+/*Estilizando os titulos*/
+h3.titulo{
+    margin: 4%;
+    font-size: 4vw;
+    font-family: Antonio;
+}
+/*Estilizando imagem da Empresa*/
+div.imgQuemSomos{
+    padding-top: 10%;
+    margin-left: 2%;
+}
+div.imgQuemSomos,
+div.containerQuemSomos
+{
+    padding: 5%;
+}
+img#quemsomos{
+    border: 0.1vw solid #FCF6DB;
+    width: 100%;
+    height: 40vw;
+}
+
+/*-----------------O QUE FAZEMOS--------------*/
+
+section .o-que-fazemos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-bottom: 25px;    
+}
+div .oQueFazemos {
+    display: flex;   
+}
+figure, figure img {
+    width: 280px;
+    height: 356px;    
+    border-radius: 8%;    
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+div .img1 {
+    display: inline-block;   
+}
+div .img2 {
+    display: inline-block;   
+}
+div .img3 {
+    display: inline-block;   
+}
+
+/*-----------------LOCALIZAÇÃO--------------*/
+
+div.localMapa{
+    margin: 1vw;    
+    display: block;
+    margin: 0% auto;
+    justify-content: center;
+    align-items: center;      
+}
+section.iframeLocal{
+    background-color: NONE;
+}
+iframe{
+    border-radius: 5%;
+    width: 50%;   
+    margin-top: 50px; 
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+/*-----------------RODAPÉ--------------*/
+
+
+footer{
+    background-color: #000;
+    border-top: #13072e solid 0.2vw;
+}
+div.divImgFooter{
+    display: flex;
+    justify-content: center;
+}
+/* Estilização do texto (rodapé) */
+.textoFooter {
+    color: #FFF;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(90%, 100%, 11 0%);
+    margin: 1em;
+}
+/* Estilização da logo central */
+img#imgLogoFooter{
+    height: clamp(2em,10em,25em);
+    border: none;
+    border-radius: none;
+}
+div.imgRedesSociais{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    padding: 2%;
+}
+.infoEmpresa{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#enderecoFooter{
+    display: flex;
+    justify-content: center;
+}
+#faceFooter,
+#instaFooter,
+#zappFooter
+{
+    height: 90%;
+}
+#imgLogoFooter{
+    margin-top: 1%;
+}
+
+/*-----------------MEDIA-QUERY--------------*/
+
+@media screen and (max-width: 300px){
+    footer.finalPag{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    img#imgLogoFooter{
+        margin-top: 10%;
+        height: 35vw;
+    }
+    p.textoFooter{
+        font-size: clamp(4vw,5vw,7vw);
+    }
+    div.divImgFooter{
+        display: flex;
+        justify-content: center;
+    }
+    div.imgRedesSociais{
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+    img.redeSocialFooter{
+        height: 60%;
+        width: 60%;
+    }   
+}
+@media screen and (max-width: 650px) {
+    img.imgSlide {
+        width: 100%;
+        height: 80vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    img.imgSlide {
+        width: 100%;
+        height: 50vw;
+    }
+    footer{
+        height: 1%;
+    }
+    img#imgLogoFooter{
+        margin-bottom: 5%;
+        height: 5em;
+        border: 0.1vw solid #fff;
+    }
+    a.linkRedeSocialFooter{
+        margin: 1vw;
+        height: 1.5em;
+    }
+    img.redeSocialFooter{
+        height: 1vw;
+    }
+    p.textoFooter{
+        font-size: 2vw;
+    }
+}
