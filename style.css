@@ -4,6 +4,7 @@
 *{
     padding: 0;
     margin: 0;
+    /*border: 2px solid rgb(255, 0, 0);*/
 }
 
 /*-------------------ROLAGEM-DO-SITE----------------*/
@@ -21,62 +22,68 @@ body{
 
 /*-------------------CABEÇALHO----------------*/
 
-header{
+.header{
     /*Tag pai, todas as alterações herdam desta*/
     /*Edição de tag parte do flexbox*/
+    list-style: none;
+    height: 5vw;
+    width: 90vw;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    backdrop-filter: brightness(15%);
-    position: fixed;
-    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    background-color:#0e0b0b;
+    margin: auto;
 }
 /*Imagem do topo do navegador*/
 img#logoNav{
-    height: 5vw; 
-}
-p.separacaoPalavras{
-    display: flex;
-    font-size: 2vw;
-    color: #4181ba;
-}
-a.btnNav{
-    color: #FFF;    
-    font-weight: 900;
-    text-decoration: none;
-    font-family: Rockstar;
-    margin-right: 2vw;
-    margin-left: 2vw;
-    font-size: clamp(1vw, 1.5vw, 4vw);
-    /*Edição de tag parte do flexbox*/
-    display: flex;
-    align-items: center;
-}
-a.btnNav:hover{
-    text-decoration: none;
-    transition: 0.1s 0.1s ease all;
-    font-size: clamp(1.5vw, 2.5vw, 8vw);
-    color: #0cc0df
+    height: 5vw;
 }
 
+a.btnNav{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(167, 167, 167, 0.8);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a.btnNav:after{
+    content: "";
+    position: absolute;
+    background-color: #0cc0df;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a.btnNav:hover{
+    color: rgb(255,255,255);
+}
+a.btnNav:hover:after{
+    width: 100%;
+}
 
 /*-------------------BOTÃO-DO-LOGIN----------------*/
 
 .menu-login {
     margin-right: 15px;
     font-size: 15px;
-    background-color: #ffffff;
+    font-family: sans-serif;
+    background-color: #0cc0df;
     padding: 5px 20px;
     border-radius: 15px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
-
 .menu-login span {
     margin-right:10px;    
-    color: #0e0b0b;
+    color: rgb(255,255,255);
 }
+.menu-login:active{
+    transform: scale(0.96);
+}
+
 
 /*-----------------SLIDESHOW-------------------*/
 
