@@ -247,25 +247,27 @@ h3.tituloCases{
 }
 div.casesLogo{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
+    position: relative;
+    justify-content: center;
+    gap: 5vw;
 }
 div.imgCasesLogo {
     padding: 0%;   
 }
 div.casesWebSites{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    justify-content: center;
+    gap: 5vw;
 }
 div.imgCasesWebSites {
     padding: 5%;  
 }
 div.casesAppWeb{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    justify-content: center;
+    gap: 5vw;
 }
 div.imgCasesAppWeb {
     padding: 0%;
