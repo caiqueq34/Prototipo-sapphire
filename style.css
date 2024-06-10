@@ -236,7 +236,7 @@ img#homepage{
     height: 25vw;
 }
 
-/*--------------CASES-------------------*/
+/*--------------TÍTULO CASES-------------------*/
 
 h3.tituloCases{
     font-size: 30px;
@@ -245,6 +245,138 @@ h3.tituloCases{
     text-align: left;
     padding-left: 10%;
 }
+/*------------CASES ANIMADOS------------*/
+.container{
+    width: 250px;
+    height: 250px;
+    
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #0cc0df;
+}
+.front{
+    background-image: url(img/logografica.jpeg);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back{
+    background-color: #4274fd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: rgb(255,255,255);
+}
+p#cases{
+    padding: 1vw;
+}
+
+.container-2{
+    width: 250px;
+    height: 250px;
+}
+.container-2:hover > .card-2{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-2, .back-2{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #0cc0df;
+}
+.front-2{
+    background-image: url(img/logoelvisburger.jpeg);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-2{
+    background-color: #4274fd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: rgb(255,255,255);
+}
+.container-3{
+    width: 250px;
+    height: 250px;
+}
+.container-3:hover > .card-3{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-3, .back-3{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #0cc0df;
+}
+.front-3{
+    background-image: url(img/logocases3.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-3{
+    background-color: #4274fd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: rgb(255,255,255);
+}
+
+/*--------------CASES-------------------*/
+
 div.casesLogo{
     display: flex;
     position: relative;
@@ -314,13 +446,28 @@ img#clientes{
 }
 /*-----------------QUEM-SOMOS--------------*/
 
-h3.titulo{
-    padding-top: 1%;
-    padding-bottom: 1%;
+.titulo-clientes{
+    background: linear-gradient(to right, #0cc0df, #0cc0df, #4274fd, #4274fd, #2c0499, #2c0499);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    width: 15vw;
     text-align: center;
-    font-size: 6vw;
-    color: #0cc0df;
-    font-family:'Courier New', Courier, monospace;
+}
+.titulo-quemsomos{
+    background: linear-gradient(to right, #0cc0df, #0cc0df, #4274fd, #4274fd, #2c0499, #2c0499);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    width: 24vw;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+.separacao{
+    display: flex;
+    justify-content: center;
 }
 div.quemSomos{
     display: flex;
@@ -383,24 +530,21 @@ img#quemsomos{
 
 /*-----------------O QUE FAZEMOS--------------*/
 
-section .o-que-fazemos {
+.oQueFazemos {
     display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
-    margin-bottom: 25px;    
-}
-div .oQueFazemos {
-    display: flex;   
+    justify-content: center;
+    margin-bottom: 5vw;
+    gap: 4vw;
 }
 figure, figure img {
     width: 280px;
     height: 356px;    
-    border-radius: 8%;    
+    border-radius: 20px;    
     margin-top: 15%;
     margin-bottom: 15%;
 }
 div .img1 {
-    display: inline-block;   
+    display: inline-block; 
 }
 div .img2 {
     display: inline-block;   
@@ -411,6 +555,15 @@ div .img3 {
 
 /*-----------------LOCALIZAÇÃO--------------*/
 
+.titulo-localizacao{
+    background: linear-gradient(to right, #0cc0df, #0cc0df, #4274fd, #4274fd, #2c0499, #2c0499);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 34vw;
+    text-align: center;
+    font-size: 4vw; 
+}
 div.localMapa{
     margin: 1vw;    
     display: block;
