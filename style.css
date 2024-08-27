@@ -207,16 +207,11 @@ section.home{
 }
 #titulo-div-home{
     font-size: 2vw;
-    color: #026b9b;
+    color: #156cdf;
     font-family: monospace;
     text-align: center;
 }
 /*Estilizando início da página*/
-h3.Home{
-    margin: 4%;
-    font-size: 4vw;
-    font-family: Antonio;
-}
 div.imgHome{
     display: inline;
     padding-top: 1vw;
@@ -238,7 +233,7 @@ img#homepage{
 
 h3.tituloCases{
     font-size: 30px;
-    color: #026b9b;
+    color: #156cdf;
     text-align: center;
     font-family:monospace;
     margin-top: 3vw;
@@ -531,7 +526,7 @@ section.quemSomos{
 #titulo-empresa{
     font-size: 2vw;
     font-family: monospace;
-    color: #026b9b;
+    color: #156cdf;
     text-align: center;
 }
 /*Estilo do texto referente ao conteúdo de "Quem somos"*/
@@ -773,5 +768,87 @@ div.imgRedesSociais{
     figure, figure img {
         width: 350px;
         height: 500px;
+    }
+}
+/*Media query para smartphone*/
+@media screen and (max-width: 767px) {
+    .container, .container-2, .container-3{
+        width: 130px;
+        height: 130px;
+    }
+    .front, .front-2, .front-3{
+        background-size: 130px 130px;
+    }
+    .back, .back-2, .back-3{
+        font-size: 2vw;
+    }
+    figure, figure img {
+        width: 140px;
+        height: 190px;
+        border-radius: 30px;
+    }
+    .titulo-localizacao, #fazemos, .titulo-quemsomos, 
+    .titulo-clientes, .tituloHome {
+        font-size: 8vw;
+        width: 60vw;
+    }
+    .titulo-quemsomos{
+        padding-bottom: 25px;
+    }
+    #fazemos {
+        margin-left: 17.5vw;
+    }
+    .tituloHome{
+        margin-left: 17.5vw;
+    }
+    .txt-animado {
+        width: 62vw;
+        margin-left: 17vw;
+        margin-top: -17vw;
+    }
+    .txt-animado span {
+        font-size: 2.5vw;
+    }
+    .txt-animado span::after{
+        height: 130%;
+    }
+    iframe {
+        width: 80vw;
+        height: 50vw;
+        margin-left: 9vw;
+        margin-top: 25px;
+    }
+    section.quemSomos {
+        width: 85%;
+    }
+    #titulo-empresa {
+        font-size: 3.5vw;
+    }
+    p.txtQuemSomos, p.txtQuemSomosValores {
+        font-size: 2.5vw;
+    }
+    img#clientes{
+        width: 30vw;
+    }
+    h3.tituloCases {
+        font-size: 4vw;
+    }
+    img#homepage {
+        width: 30vw;
+        height: 30vw;
+        margin-top: 4vw;
+    }
+    div.containerHome {
+        width: 70vw;
+        height: 32vw;
+    }
+    p.txtHome {
+        font-size: 2.7vw;
+    }
+    section.home {
+        width: 95%;
+    }
+    #titulo-div-home {
+        font-size: 2.7vw;
     }
 }
