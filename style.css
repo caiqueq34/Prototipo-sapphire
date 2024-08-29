@@ -18,6 +18,8 @@ html{
 
 body{
     background-color: #0c041f;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*-------------------CABEÇALHO----------------*/
@@ -771,7 +773,7 @@ div.imgRedesSociais{
     }
 }
 /*Media query para smartphone*/
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 934px) {
     .container, .container-2, .container-3{
         width: 115px;
         height: 115px;
