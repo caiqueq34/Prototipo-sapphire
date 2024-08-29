@@ -771,26 +771,30 @@ div.imgRedesSociais{
     }
 }
 /*Media query para smartphone*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .container, .container-2, .container-3{
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
     }
     .front, .front-2, .front-3{
-        background-size: 130px 130px;
+        background-size: 120px 120px;
     }
     .back, .back-2, .back-3{
         font-size: 2vw;
     }
     figure, figure img {
-        width: 140px;
-        height: 190px;
+        width: 125px;
+        height: 175px;
         border-radius: 30px;
     }
-    .titulo-localizacao, #fazemos, .titulo-quemsomos, 
+    #fazemos, .titulo-quemsomos, 
     .titulo-clientes, .tituloHome {
         font-size: 8vw;
         width: 60vw;
+    }
+    .titulo-localizacao{
+        width: 80vw;
+        font-size: 8vw;
     }
     .titulo-quemsomos{
         padding-bottom: 25px;
@@ -802,7 +806,7 @@ div.imgRedesSociais{
         margin-left: 17.5vw;
     }
     .txt-animado {
-        width: 62vw;
+        width: 65vw;
         margin-left: 17vw;
         margin-top: -17vw;
     }
@@ -810,7 +814,7 @@ div.imgRedesSociais{
         font-size: 2.5vw;
     }
     .txt-animado span::after{
-        height: 130%;
+        height: 140%;
     }
     iframe {
         width: 80vw;
@@ -850,5 +854,8 @@ div.imgRedesSociais{
     }
     #titulo-div-home {
         font-size: 2.7vw;
+    }
+    .btnNav{
+        display: none;
     }
 }
