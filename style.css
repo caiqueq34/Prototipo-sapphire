@@ -771,7 +771,7 @@ div.imgRedesSociais{
     }
 }
 /*Media query para smartphone*/
-@media screen and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .container, .container-2, .container-3{
         width: 130px;
         height: 130px;
