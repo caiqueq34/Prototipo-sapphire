@@ -771,20 +771,20 @@ div.imgRedesSociais{
     }
 }
 /*Media query para smartphone*/
-@media screen and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
     .container, .container-2, .container-3{
-        width: 120px;
-        height: 120px;
+        width: 115px;
+        height: 115px;
     }
     .front, .front-2, .front-3{
-        background-size: 120px 120px;
+        background-size: 115px 115px;
     }
     .back, .back-2, .back-3{
         font-size: 2vw;
     }
     figure, figure img {
-        width: 125px;
-        height: 175px;
+        width: 120px;
+        height: 160px;
         border-radius: 30px;
     }
     #fazemos, .titulo-quemsomos, 
