@@ -775,6 +775,9 @@ div.imgRedesSociais{
 }
 /*Media query para smartphone*/
 @media (min-width: 300px) and (max-width: 934px) {
+    body{
+        overflow-x: hidden;
+    }
     .container, .container-2, .container-3{
         width: 115px;
         height: 115px;
