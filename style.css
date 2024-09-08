@@ -12,6 +12,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+    overflow-x: hidden;
 }
 
 /*-------------------CORPO-DO-SITE----------------*/
@@ -775,7 +776,7 @@ div.imgRedesSociais{
 }
 /*Media query para smartphone*/
 @media (min-width: 300px) and (max-width: 934px) {
-    body{
+    html, body{
         overflow-x: hidden;
     }
     .container, .container-2, .container-3{
@@ -812,15 +813,15 @@ div.imgRedesSociais{
         margin-left: 17.5vw;
     }
     .txt-animado {
-        width: 65vw;
-        margin-left: 17vw;
+        width: 80vw;
+        margin-left: 9vw;
         margin-top: -17vw;
     }
     .txt-animado span {
         font-size: 2.5vw;
     }
     .txt-animado span::after{
-        height: 140%;
+        height: 160%;
     }
     iframe {
         width: 80vw;
