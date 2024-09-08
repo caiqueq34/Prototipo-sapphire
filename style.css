@@ -20,6 +20,7 @@ body{
     background-color: #0c041f;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 /*-------------------CABEÇALHO----------------*/
