@@ -695,6 +695,13 @@ div.imgRedesSociais{
     margin-top: 1%;
 }
 
+#seta{
+    width: 4vw;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
 /*-----------------MEDIA-QUERY--------------*/
 
 @media screen and (max-width: 300px){
@@ -787,7 +794,7 @@ div.imgRedesSociais{
         background-size: 115px 115px;
     }
     .back, .back-2, .back-3{
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     figure, figure img {
         width: 120px;
@@ -864,5 +871,11 @@ div.imgRedesSociais{
     }
     .btnNav{
         display: none;
+    }
+    #seta{
+        width: 9vw;
+    }
+    img#casesappweb{
+        border-radius: 17px;
     }
 }
