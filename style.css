@@ -702,6 +702,15 @@ div.imgRedesSociais{
     bottom: 20px;
 }
 
+.menu-icon, .menu-icon-x{
+    width: 5vw;
+    cursor: pointer;
+    display: none;
+}
+.nav-header{
+    z-index: 2;
+}
+
 /*-----------------MEDIA-QUERY--------------*/
 
 @media screen and (max-width: 300px){
@@ -782,7 +791,7 @@ div.imgRedesSociais{
     }
 }
 /*Media query para smartphone*/
-@media (min-width: 300px) and (max-width: 934px) {
+@media (min-width: 300px) and (max-width: 768px) {
     html, body{
         overflow-x: hidden;
     }
@@ -869,7 +878,7 @@ div.imgRedesSociais{
     #titulo-div-home {
         font-size: 2.7vw;
     }
-    .btnNav{
+    .menu-login{
         display: none;
     }
     #seta{
@@ -877,5 +886,32 @@ div.imgRedesSociais{
     }
     img#casesappweb{
         border-radius: 17px;
+    }
+    .menu-icon, .menu-icon-x{
+        display: block;
+    }
+    .nav-header{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #0cc0df;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-right: -140vw;
+
+    }
+    @keyframes mostraNavbar {
+        from {margin-right: -140vw;}
+        top{margin-right: -60vw;}
+    }
+    #logoNav{
+        margin-left: -20vw;
+    }
+    .btn-header{
+        margin-right: -20vw;
+        background-color: transparent;
+        border: none;
     }
 }
