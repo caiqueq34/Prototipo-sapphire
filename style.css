@@ -708,7 +708,10 @@ div.imgRedesSociais{
     display: none;
 }
 .nav-header{
+    display: flex;
+    align-items: center;
     z-index: 2;
+    gap: 2em;
 }
 
 /*-----------------MEDIA-QUERY--------------*/
@@ -894,13 +897,12 @@ div.imgRedesSociais{
         position: absolute;
         flex-direction: column;
         top: 0;
-        background-color: #0cc0df;
+        background-color: #210e4b;
         height: 100%;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
         margin-right: -140vw;
-
     }
     @keyframes mostraNavbar {
         from {margin-right: -140vw;}
@@ -911,6 +913,10 @@ div.imgRedesSociais{
     }
     .btn-header{
         margin-right: -20vw;
+        background-color: transparent;
+        border: none;
+    }
+    .btn-header-x{
         background-color: transparent;
         border: none;
     }
