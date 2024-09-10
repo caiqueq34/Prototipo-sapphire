@@ -905,8 +905,12 @@ div.imgRedesSociais{
         margin-right: -140vw;
     }
     @keyframes mostraNavbar {
-        from {margin-right: -140vw;}
-        top{margin-right: -60vw;}
+        from {
+            margin-right: -140vw;
+        }
+        top{
+            margin-right: -60vw;
+        }
     }
     #logoNav{
         margin-left: -20vw;
