@@ -7,7 +7,7 @@ function abrirNavbar()
   if(mostraNavbar){
     navheader.style.marginRight ='-60vw';
     navheader.style.animationName = 'mostraNavbar';
-    navheader.style.display = 'block';
+    navheader.style.display = 'flex';
     navheader.style.position = 'fixed';
   }
   else{

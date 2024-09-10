@@ -703,7 +703,7 @@ div.imgRedesSociais{
 }
 
 .menu-icon, .menu-icon-x{
-    width: 5vw;
+    width: 7vw;
     cursor: pointer;
     display: none;
 }
@@ -894,9 +894,10 @@ div.imgRedesSociais{
         display: block;
     }
     .nav-header{
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         top: 0;
+        text-align: center;
         background-color: #210e4b;
         height: 100%;
         width: 40vw;
@@ -926,5 +927,11 @@ div.imgRedesSociais{
     .btn-header-x{
         background-color: transparent;
         border: none;
+    }
+    .header{
+        height: 8vw;
+    }
+    #logoNav{
+        width: 18vw;
     }
 }
