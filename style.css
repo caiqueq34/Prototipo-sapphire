@@ -899,17 +899,20 @@ div.imgRedesSociais{
         top: 0;
         background-color: #210e4b;
         height: 100%;
-        width: 35vw;
+        width: 40vw;
         padding: 1em;
         animation-duration: 1s;
         margin-right: -140vw;
+        display: none;
     }
     @keyframes mostraNavbar {
         from {
             margin-right: -140vw;
+            display: none;
         }
         top{
             margin-right: -60vw;
+            display: block;
         }
     }
     #logoNav{
