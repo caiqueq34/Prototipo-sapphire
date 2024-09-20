@@ -18,7 +18,7 @@ html{
 /*-------------------CORPO-DO-SITE----------------*/
 
 body{
-    background-color: #0c041f;
+    background-color: #f1f1f1;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -47,7 +47,7 @@ a.btnNav{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgba(167, 167, 167, 0.8);
+    color: rgba(92, 92, 92, 0.8);
     font-size: 18px;
     letter-spacing: 0.5px;
     padding: 0 10px;
@@ -63,7 +63,7 @@ a.btnNav:after{
     transition: 0.3s;
 }
 a.btnNav:hover{
-    color: rgb(255,255,255);
+    color: rgb(169, 163, 202);
 }
 a.btnNav:hover:after{
     width: 100%;
@@ -116,7 +116,7 @@ a.btnNav:hover:after{
     content: "";
     position: absolute;
     height: 100% ;
-    border-left: 2px solid #156cdf;
+    border-left: 2px solid #4f5455;
     right: -10px;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width: calc(100% + 18px);
@@ -186,7 +186,7 @@ div.home{
     background-color: none;
 }
 p.txtHome{
-    color: #fff;
+    color: #202020;
     margin: 2vw;
     margin-top: 4vw;
     font-size: 1.7em;    
@@ -202,7 +202,7 @@ div.separacaoHome{
     justify-content: center;
     align-items: center;
     height: clamp(5vw,10vw,20vw);
-    background-color: #4274fd;
+    background-color: #000000;
 }
 section.home{
     background-color: color-mix(in srgb-linear, color percentage, color percentage);
@@ -212,7 +212,7 @@ section.home{
 }
 #titulo-div-home{
     font-size: 2vw;
-    color: #156cdf;
+    color: #000000;
     font-family: monospace;
     text-align: center;
 }
@@ -224,8 +224,9 @@ div.imgHome{
 }
 div.containerHome
 {
+    background-color: #ffffff;
     padding: 2vw;
-    border: 3px solid #240b5e;
+    border: 3px solid #eeeeee;
     border-radius: 50px;
 }
 img#homepage{
@@ -267,7 +268,7 @@ h3.tituloCases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #0cc0df;
+    border: 3px solid #e7e7e7;
 }
 .front{
     background-image: url(img/logografica.jpeg);
@@ -275,7 +276,7 @@ h3.tituloCases{
     background-size: 250px 250px;
 }
 .back{
-    background-color: #4274fd;
+    background-color: #e0e0e0;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -284,7 +285,7 @@ h3.tituloCases{
     gap: 3vw;
     font-size: 1.3vw;
     font-family: monospace;
-    color: rgb(255,255,255);
+    color: rgb(0, 0, 0);
 }
 p#cases{
     padding: 1vw;
@@ -313,7 +314,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #0cc0df;
+    border: 3px solid #e7e7e7;
 }
 .front-2{
     background-image: url(img/logoelvisburger.jpeg);
@@ -321,7 +322,7 @@ p#cases{
     background-size: 250px 250px;
 }
 .back-2{
-    background-color: #4274fd;
+    background-color: #e0e0e0;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -330,7 +331,7 @@ p#cases{
     gap: 3vw;
     font-size: 1.3vw;
     font-family: monospace;
-    color: rgb(255,255,255);
+    background-color: #e0e0e0;
 }
 .container-3{
     width: 250px;
@@ -355,7 +356,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #0cc0df;
+    border: 3px solid #e7e7e7;
 }
 .front-3{
     background-image: url(img/logo-charge.png);
@@ -363,7 +364,7 @@ p#cases{
     background-size: 250px 250px;
 }
 .back-3{
-    background-color: #4274fd;
+    background-color: #e0e0e0;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -372,9 +373,92 @@ p#cases{
     gap: 3vw;
     font-size: 1.3vw;
     font-family: monospace;
-    color: rgb(255,255,255);
+    color: rgb(14, 13, 13);
 }
-
+.container-4{
+    width: 250px;
+    height: 250px;
+    margin-top: 3vw;
+}
+.container-4:hover > .card-4{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-4, .back-4{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #e7e7e7;
+}
+.front-4{
+    background-image: url(img/logoslimtech.png);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-4{
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: rgb(14, 13, 13);
+}
+.container-5{
+    width: 250px;
+    height: 250px;
+    margin-top: 3vw;
+}
+.container-5:hover > .card-5{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-5, .back-5{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #e7e7e7;
+}
+.front-5{
+    background-image: url(img/logogeekstore.png);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-5{
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: rgb(14, 13, 13);
+}
 /*--------------CASES WEB SITES-------------------*/
 
 .container-web{
@@ -435,7 +519,7 @@ p#cases{
 }
 .card-web .info a{
     text-decoration: none;
-    background-color: #0cc0df;
+    background-color: #b2c4ec;
     padding: 1vw;
     border-radius: 10px ;
     color: rgb(255,255,255);
@@ -494,17 +578,19 @@ img#clientes{
     width: 20%;
     padding: 10px;
 }
-/*-----------------QUEM-SOMOS--------------*/
 
 .titulo-clientes{
-    color: #156cdf;
+    background-color: #f1f1f1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4vw;
     width: 15vw;
     text-align: center;
 }
+
+/*-----------------QUEM-SOMOS--------------*/
+
 .titulo-quemsomos{
-    color: #156cdf;
+    background-color: #f1f1f1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4vw;
     width: 24vw;
@@ -523,7 +609,7 @@ div.quemSomos{
     margin-bottom: 5%;
 }
 section.quemSomos{
-    background-color:#190a3b;
+    background-color:#ffffff;
     width: 70%;
     border-radius: 40px;
     margin-top: -3%;    
@@ -531,19 +617,19 @@ section.quemSomos{
 #titulo-empresa{
     font-size: 2vw;
     font-family: monospace;
-    color: #156cdf;
+    color: #000000;
     text-align: center;
 }
 /*Estilo do texto referente ao conteúdo de "Quem somos"*/
 p.txtQuemSomos{
-    color: #fff;
+    color: #000000;
     margin: 2vw;
     text-align: justify; 
     font-size: 1.5vw;
     font-family: monospace;   
 }
 p.txtQuemSomosValores{
-    color: #fff;
+    color: #000000;
     margin: 2vw;
     text-align: center;  
     font-size: 1.5vw;
@@ -716,8 +802,7 @@ div.imgRedesSociais{
     display: flex;
     align-items: center;
     z-index: 2;
-    gap: 5em;
-    margin-left: -12vw;
+    gap: 2em;
 }
 
 /*-----------------MEDIA-QUERY--------------*/
@@ -779,7 +864,7 @@ div.imgRedesSociais{
     }
 }
 @media screen and (min-width: 1500px) {
-    .back, .back-2, .back-3{
+    .back, .back-2, .back-3, .back-4, .back-5{
         font-size: 1vw;
     }
     .titulo-clientes{
@@ -804,14 +889,14 @@ div.imgRedesSociais{
     html, body{
         overflow-x: hidden;
     }
-    .container, .container-2, .container-3{
+    .container, .container-2, .container-3, .container-4, .container-5{
         width: 115px;
         height: 115px;
     }
-    .front, .front-2, .front-3{
+    .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 115px 115px;
     }
-    .back, .back-2, .back-3{
+    .back, .back-2, .back-3, .back-4, .back-5{
         font-size: 1.7vw;
     }
     figure, figure img {
