@@ -95,8 +95,8 @@ a.btnNav:hover:after{
 .txt-animado{
     font-weight: 200;
     width: 50vw;
-    margin-top: -15vw;
-    margin-left: 25vw;
+    margin-top: -35vw;
+    margin-left: 48vw;
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ a.btnNav:hover:after{
     right: -10px;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width: calc(100% + 18px);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(12, 15, 24);
 }
 
 @keyframes digita{
@@ -160,7 +160,7 @@ a.btnNav:hover:after{
 
 .img-topo{
     height: 40vw;
-    background-image: url("img/computador4.jpg");
+    background-image: url("img/computador2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 10vw;
@@ -174,7 +174,7 @@ a.btnNav:hover:after{
     text-align: center;
     margin-left: 31.5vw;
     width: 35vw;
-    margin-top: 5vw;
+    margin-top: 25vw;
     padding: 0.4vw;
     font-size: 4.5vw;
     padding-bottom: 2vw;
@@ -282,7 +282,7 @@ h3.tituloCases{
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    font-size: 1.3vw;
+    font-size: 0.9vw;
     font-family: monospace;
     color: rgb(255,255,255);
 }
@@ -328,7 +328,7 @@ p#cases{
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    font-size: 1.3vw;
+    font-size: 0.9vw;
     font-family: monospace;
     color: rgb(255,255,255);
 }
@@ -370,7 +370,91 @@ p#cases{
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    font-size: 1.3vw;
+    font-size: 0.9vw;
+    font-family: monospace;
+    color: rgb(255,255,255);
+}
+.container-4{
+    width: 250px;
+    height: 250px;
+    margin-top: 3vw;
+}
+.container-4:hover > .card-4{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-4, .back-4{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #0cc0df;
+}
+.front-4{
+    background-image: url(img/logoslimtech.png);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-4{
+    background-color: #4274fd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 0.9vw;
+    font-family: monospace;
+    color: rgb(255,255,255);
+}
+.container-5{
+    width: 250px;
+    height: 250px;
+    margin-top: 3vw;
+}
+.container-5:hover > .card-5{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front-5, .back-5{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #0cc0df;
+}
+.front-5{
+    background-image: url(img/logogeekstore.png);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+.back-5{
+    background-color: #4274fd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: 0.9vw;
     font-family: monospace;
     color: rgb(255,255,255);
 }

@@ -47,7 +47,7 @@ a.btnNav{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgba(92, 92, 92, 0.8);
+    color: rgba(63, 63, 63, 0.8);
     font-size: 18px;
     letter-spacing: 0.5px;
     padding: 0 10px;
@@ -63,7 +63,7 @@ a.btnNav:after{
     transition: 0.3s;
 }
 a.btnNav:hover{
-    color: rgb(169, 163, 202);
+    color: rgb(27, 27, 27);
 }
 a.btnNav:hover:after{
     width: 100%;
@@ -95,8 +95,8 @@ a.btnNav:hover:after{
 .txt-animado{
     font-weight: 200;
     width: 50vw;
-    margin-top: -15vw;
-    margin-left: 25vw;
+    margin-top: -35vw;
+    margin-left: 48vw;
     text-align: center;
 }
 
@@ -116,11 +116,11 @@ a.btnNav:hover:after{
     content: "";
     position: absolute;
     height: 100% ;
-    border-left: 2px solid #4f5455;
+    border-left: 2px solid #156cdf;
     right: -10px;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width: calc(100% + 18px);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(12, 15, 24);
 }
 
 @keyframes digita{
@@ -160,7 +160,7 @@ a.btnNav:hover:after{
 
 .img-topo{
     height: 40vw;
-    background-image: url("img/computador4.jpg");
+    background-image: url("img/computador2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 10vw;
@@ -174,7 +174,7 @@ a.btnNav:hover:after{
     text-align: center;
     margin-left: 31.5vw;
     width: 35vw;
-    margin-top: 5vw;
+    margin-top: 25vw;
     padding: 0.4vw;
     font-size: 4.5vw;
     padding-bottom: 2vw;
@@ -212,7 +212,7 @@ section.home{
 }
 #titulo-div-home{
     font-size: 2vw;
-    color: #000000;
+    color: #156cdf;
     font-family: monospace;
     text-align: center;
 }
@@ -226,7 +226,7 @@ div.containerHome
 {
     background-color: #ffffff;
     padding: 2vw;
-    border: 3px solid #eeeeee;
+    border: 3px solid #240b5e;
     border-radius: 50px;
 }
 img#homepage{
@@ -268,7 +268,7 @@ h3.tituloCases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #e7e7e7;
+    border: 3px solid #240b5e;
 }
 .front{
     background-image: url(img/logografica.jpeg);
@@ -314,7 +314,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #e7e7e7;
+    border: 3px solid #240b5e;
 }
 .front-2{
     background-image: url(img/logoelvisburger.jpeg);
@@ -356,7 +356,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #e7e7e7;
+    border: 3px solid #240b5e;
 }
 .front-3{
     background-image: url(img/logo-charge.png);
@@ -398,7 +398,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #e7e7e7;
+    border: 3px solid #240b5e;
 }
 .front-4{
     background-image: url(img/logoslimtech.png);
@@ -440,7 +440,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #e7e7e7;
+    border: 3px solid #240b5e;
 }
 .front-5{
     background-image: url(img/logogeekstore.png);
@@ -802,7 +802,8 @@ div.imgRedesSociais{
     display: flex;
     align-items: center;
     z-index: 2;
-    gap: 2em;
+    gap: 5em;
+    margin-left: -12vw;
 }
 
 /*-----------------MEDIA-QUERY--------------*/
