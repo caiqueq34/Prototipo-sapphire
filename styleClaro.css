@@ -884,6 +884,9 @@ div.imgRedesSociais{
         width: 350px;
         height: 500px;
     }
+    .nav-header{
+        gap: 2rem;
+    }
 }
 /*Media query para smartphone*/
 @media (min-width: 300px) and (max-width: 768px) {

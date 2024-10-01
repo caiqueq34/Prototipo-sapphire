@@ -882,20 +882,23 @@ div.imgRedesSociais{
         width: 350px;
         height: 500px;
     }
+    .nav-header{
+        gap: 2rem;
+    }
 }
 /*Media query para smartphone*/
 @media (min-width: 300px) and (max-width: 768px) {
     html, body{
         overflow-x: hidden;
     }
-    .container, .container-2, .container-3{
+    .container, .container-2, .container-3, .container-4, .container-5{
         width: 115px;
         height: 115px;
     }
-    .front, .front-2, .front-3{
+    .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 115px 115px;
     }
-    .back, .back-2, .back-3{
+    .back, .back-2, .back-3, .back-4, .back-5{
         font-size: 1.7vw;
     }
     figure, figure img {
@@ -1013,10 +1016,12 @@ div.imgRedesSociais{
         margin-right: -20vw;
         background-color: transparent;
         border: none;
+        display: block;
     }
     .btn-header-x{
         background-color: transparent;
         border: none;
+        display: block;
     }
     .header{
         height: 8vw;
