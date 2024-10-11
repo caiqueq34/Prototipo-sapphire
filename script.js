@@ -5,7 +5,7 @@ function abrirNavbar()
 {
   mostraNavbar = !mostraNavbar;
   if(mostraNavbar){
-    navheader.style.marginRight ='-60vw';
+    navheader.style.marginRight ='-70vw';
     navheader.style.animationName = 'mostraNavbar';
     navheader.style.display = 'flex';
     navheader.style.position = 'fixed';
