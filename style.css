@@ -245,9 +245,27 @@ h3.tituloCases{
 }
 /*------------CASES ANIMADOS------------*/
 
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setas{
+    padding: 2vw;
+    cursor: pointer;
+}
+.swipper-wrapper{
+    width: 85vw;
+    height: 25vw;
+    display: flex;
+    padding-left: 2vw;
+    overflow: hidden;
+    gap: 15vw;
+}
+
 .swiper-slide{
-    min-width: 210px;
-    max-height: 250px;
+    min-width: 215px;
+    max-height: 300px;
     margin-top: 3vw;
 }
 .swiper-slide:hover > .card{
@@ -273,7 +291,7 @@ h3.tituloCases{
 .front{
     background-image: url(img/logografica.jpeg);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 290px 290px;
 }
 .back{
     background-color: #4274fd;
@@ -283,12 +301,13 @@ h3.tituloCases{
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    font-size: 0.9vw;
     font-family: monospace;
     color: rgb(255,255,255);
+    
 }
-p#cases{
+.txt-cases{
     padding: 1vw;
+    font-size: 1.5vw;
 }
 .front-2, .back{
     height: 100%;
@@ -416,15 +435,7 @@ p#cases{
 }
 
 /*--------------CASES-------------------*/
-.swipper-wrapper{
-    width: 85vw;
-    height: 25vw;
-    display: flex;
-    margin-left: 6.5vw;
-    overflow-x: hidden;
-    gap: 15vw;
-    border: 2px solid red;
-}
+
 div.casesAppWeb{
     display: flex;
     position: relative;
@@ -750,7 +761,7 @@ div.imgRedesSociais{
     }
 }
 @media screen and (min-width: 1500px) {
-    .back, .back-2, .back-3{
+    .back{
         font-size: 1vw;
     }
     .titulo-clientes{
@@ -772,14 +783,14 @@ div.imgRedesSociais{
     .nav-header{
         gap: 2rem;
     }
-    .container, .container-2, .container-3, .container-4, .container-5{
+    .swiper-slide{
         width: 250px;
         height: 250px;
     }
     .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 216px 250px;
     }
-    .back, .back-2, .back-3, .back-4, .back-5{
+    .back{
         font-size: 1.2vw;
     }
 }
@@ -788,12 +799,16 @@ div.imgRedesSociais{
     html, body{
         overflow-x: hidden;
     }
+    .swipper-wrapper{
+        height: 40vw;
+    }
     .swiper-slide{
-        width: 115px;
-        height: 115px;
+        min-width: 170px;
+        max-height: 170px;
+        margin-left: 11vw;
     }
     .front, .front-2, .front-3, .front-4, .front-5{
-        background-size: 115px 115px;
+        background-size: 170px 170px;
     }
     .back{
         font-size: 1.7vw;
