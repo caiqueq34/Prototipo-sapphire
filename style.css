@@ -305,9 +305,12 @@ h3.tituloCases{
     color: rgb(255,255,255);
     
 }
+.titu-cases{
+    font-size: 1.4vw;
+}
 .txt-cases{
-    padding: 1vw;
-    font-size: 1.5vw;
+    font-size: 0.9vw;
+    padding: 0.5vw;
 }
 .front-2, .back{
     height: 100%;
@@ -367,10 +370,15 @@ h3.tituloCases{
 }
 
 /*--------------CASES WEB SITES-------------------*/
-
+.carrossel-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+}
 .container-web{
     display: flex;
-    width: 100%;
+    width: 85vw;
     justify-content: space-around;
     margin-top: 3vw;
 }
@@ -698,7 +706,7 @@ div.imgRedesSociais{
     display: flex;
     align-items: center;
     z-index: 2;
-    gap: 5em;
+    gap: 7rem;
     margin-left: -12vw;
 }
 
@@ -933,12 +941,14 @@ div.imgRedesSociais{
         margin-right: 30vw;
     }
     .txt-animado{
-        margin-left: 45vw;
+        margin-left: 44vw;
         margin-top: -37vw;
-        width: 52vw;
+        width: 55vw;
     }
     .txt-animado span{
         font-size: 2vw;
     }
-    
+    .carrossel{
+        height: 47vw;
+    }
 }
