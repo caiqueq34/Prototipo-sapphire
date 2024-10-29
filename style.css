@@ -821,6 +821,13 @@ div.imgRedesSociais{
     .back{
         font-size: 1.7vw;
     }
+    .titu-cases{
+        font-size: 3.5vw;
+    }
+    .txt-cases{
+        font-size: 2.5vw;
+        padding: 1.5vw;
+    }
     figure, figure img {
         width: 120px;
         height: 160px;
@@ -884,6 +891,7 @@ div.imgRedesSociais{
     div.containerHome {
         width: 70vw;
         height: 32vw;
+        border-radius: 40px;
     }
     p.txtHome {
         font-size: 2.7vw;
@@ -941,12 +949,12 @@ div.imgRedesSociais{
         margin-right: 30vw;
     }
     .txt-animado{
-        margin-left: 39vw;
+        margin-left: 37vw;
         margin-top: -37vw;
         width: 65vw;
     }
     .txt-animado span{
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     .carrossel{
         height: 47vw;

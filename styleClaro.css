@@ -245,12 +245,30 @@ h3.tituloCases{
     margin-top: 3vw;
 }
 /*------------CASES ANIMADOS------------*/
-.container{
-    width: 250px;
-    height: 250px;
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setas{
+    padding: 2vw;
+    cursor: pointer;
+}
+.swipper-wrapper{
+    width: 85vw;
+    height: 25vw;
+    display: flex;
+    padding-left: 2vw;
+    overflow: hidden;
+    gap: 15vw;
+}
+
+.swiper-slide{
+    min-width: 215px;
+    max-height: 250px;
     margin-top: 3vw;
 }
-.container:hover > .card{
+.swiper-slide:hover > .card{
     cursor: pointer;
     transform: rotateY(180deg);
 }
@@ -268,29 +286,32 @@ h3.tituloCases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #240b5e;
+    border: 3px solid #0cc0df;
 }
 .front{
     background-image: url(img/logografica.jpeg);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 290px 290px;
 }
 .back{
-    background-color: #e0e0e0;
+    background-color: #4274fd;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    font-size: 1.3vw;
     font-family: monospace;
-    color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    
 }
-p#cases{
-    padding: 1vw;
+.titu-cases{
+    font-size: 1.4vw;
 }
-
+.txt-cases{
+    font-size: 0.9vw;
+    padding: 0.5vw;
+}
 .front-2, .back{
     height: 100%;
     width: 100%;
@@ -298,17 +319,12 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #240b5e;
+    border: 3px solid #0cc0df;
 }
 .front-2{
     background-image: url(img/logoelvisburger.jpeg);
     background-repeat: no-repeat;
     background-size: 250px 250px;
-}
-.container-3{
-    width: 250px;
-    height: 250px;
-    margin-top: 3vw;
 }
 .front-3, .back{
     height: 100%;
@@ -317,7 +333,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #240b5e;
+    border: 3px solid #0cc0df;
 }
 .front-3{
     background-image: url(img/logo-charge.png);
@@ -331,7 +347,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #240b5e;
+    border: 3px solid #0cc0df;
 }
 .front-4{
     background-image: url(img/logoslimtech.png);
@@ -345,7 +361,7 @@ p#cases{
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
-    border: 3px solid #240b5e;
+    border: 3px solid #0cc0df;
 }
 .front-5{
     background-image: url(img/logogeekstore.png);
@@ -477,6 +493,7 @@ img#clientes{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4vw;
     width: 15vw;
+    color: #156cdf;
     text-align: center;
 }
 
@@ -487,6 +504,7 @@ img#clientes{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4vw;
     width: 24vw;
+    color: #156cdf;
     text-align: center;
     padding-bottom: 6vw;
 }
@@ -796,15 +814,26 @@ div.imgRedesSociais{
     html, body{
         overflow-x: hidden;
     }
-    .container{
-        width: 115px;
-        height: 115px;
+    .swipper-wrapper{
+        height: 40vw;
+    }
+    .swiper-slide{
+        min-width: 170px;
+        max-height: 170px;
+        margin-left: 11vw;
     }
     .front, .front-2, .front-3, .front-4, .front-5{
-        background-size: 115px 115px;
+        background-size: 170px 170px;
     }
     .back{
         font-size: 1.7vw;
+    }
+    .titu-cases{
+        font-size: 3.5vw;
+    }
+    .txt-cases{
+        font-size: 2.5vw;
+        padding: 1.5vw;
     }
     figure, figure img {
         width: 120px;
@@ -869,6 +898,7 @@ div.imgRedesSociais{
     div.containerHome {
         width: 70vw;
         height: 32vw;
+        border-radius: 40px;
     }
     p.txtHome {
         font-size: 2.7vw;
@@ -894,7 +924,7 @@ div.imgRedesSociais{
         flex-direction: column;
         top: 0;
         text-align: center;
-        background-color: #210e4b;
+        background-color: #a6bee0;
         height: 100%;
         width: 40vw;
         padding: 1em;
@@ -923,5 +953,16 @@ div.imgRedesSociais{
     #logoNav{
         width: 18vw;
         margin-right: 30vw;
+    }
+    .txt-animado{
+        margin-left: 37vw;
+        margin-top: -37vw;
+        width: 65vw;
+    }
+    .txt-animado span{
+        font-size: 1.8vw;
+    }
+    .carrossel{
+        height: 47vw;
     }
 }
