@@ -944,12 +944,12 @@ div.imgRedesSociais{
         margin-left: 17.5vw;
     }
     .txt-animado {
-        width: 80vw;
-        margin-left: 12vw;
-        margin-top: -17vw;
+        width: 75vw;
+        margin-left: 34.5vw;
+        margin-top: -37vw;
     }
     .txt-animado span {
-        font-size: 3vw;
+        font-size: 1.8vw;
     }
     .txt-animado span::after{
         height: 180%;
@@ -1038,14 +1038,6 @@ div.imgRedesSociais{
     #logoNav{
         width: 18vw;
         margin-right: 30vw;
-    }
-    .txt-animado{
-        margin-left: 37vw;
-        margin-top: -37vw;
-        width: 65vw;
-    }
-    .txt-animado span{
-        font-size: 1.8vw;
     }
     .carrossel-3{
         width: 100vw;
