@@ -244,6 +244,7 @@ h3.tituloCases{
     margin-top: 3vw;
 }
 /*------------CASES ANIMADOS------------*/
+
 #prev-button-3, #next-button-3 {
     border: none;
     background-color: transparent;
@@ -266,18 +267,20 @@ h3.tituloCases{
     justify-content: center;
 }
 .swipper-wrapper{
-    width: 85vw;
+    width: 80vw;
     height: 25vw;
     display: flex;
     padding-left: 2vw;
     overflow: hidden;
-    gap: 15vw;
+    gap: 20vw;
+    border: 2px solid red;
 }
 
 .swiper-slide{
     min-width: 215px;
     max-height: 300px;
     margin-top: 3vw;
+    margin-left:12.5vw;
 }
 .swiper-slide:hover > .card{
     cursor: pointer;

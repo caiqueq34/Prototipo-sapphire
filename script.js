@@ -24,30 +24,13 @@ window.addEventListener('resize', function(event) {
 });
 
 //fazendo lógica do carrossel
-const carrossel = document.querySelector(".swipper-wrapper");
+const sliders = document.querySelectorAll('.card');
+const btnPrevs = document.getElementById('prev-button-3');
+const btnNexts = document.getElementById('next-button-3');
 
-let isDragStart = false, prevPageX, prevScrollLeft;
-
-const dragStart = (e) => {
-  isDragStart = true;
-  prevPageX = e.pageX;
-  prevScrollLeft = carrossel.scrollLeft;
+function proxSlide() {
+  
 }
-
-const dragging = (e) => {
-  if(!isDragStart) return;
-  e.preventDefault();
-  let positionDiff = e.pageX - prevPageX;
-  carrossel.scrollLeft = prevScrollLeft - positionDiff;
-}
-
-const dragStop = () => {
-  isDragStart = false;
-}
-
-carrossel.addEventListener("mousedown", dragStart);
-carrossel.addEventListener("mousemove", dragging);
-carrossel.addEventListener("mouseup", dragStop);
 
 
 /* TESTE APP*/

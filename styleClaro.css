@@ -282,6 +282,7 @@ h3.tituloCases{
     min-width: 215px;
     max-height: 250px;
     margin-top: 3vw;
+    margin-left: 12.5vw;
 }
 .swiper-slide:hover > .card{
     cursor: pointer;
