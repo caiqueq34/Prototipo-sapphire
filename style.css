@@ -864,13 +864,25 @@ div.imgRedesSociais{
     }
 }
 /*Media query para desktop*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
+    .container-slider {
+        width: 60vw;
+        padding-top: 7vw;
+    }
+    #prev-button, #next-button{
+        width: 7vw;
+    }
     figure, figure img {
-        width: 350px;
-        height: 500px;
+        width: 270px;
+        height: 400px;
+        margin-top:20px;
+        border-radius: 30px;
+    }
+    #logoNav{
+        margin-right: 120px;
     }
     .nav-header{
-        gap: 2rem;
+        gap: 1.4vw;
     }
     .swiper-slide{
         width: 250px;
