@@ -469,7 +469,7 @@ h3.tituloCases{
 }
 .card-web .info a{
     text-decoration: none;
-    background-color: #b2c4ec;
+    background-color: #0cc0df;
     padding: 1vw;
     border-radius: 10px ;
     color: rgb(255,255,255);
@@ -959,7 +959,7 @@ div.imgRedesSociais{
         font-size: 1.8vw;
     }
     .txt-animado span::after{
-        height: 180%;
+        height: 200%;
     }
     iframe {
         width: 80vw;

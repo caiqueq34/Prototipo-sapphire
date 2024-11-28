@@ -901,6 +901,14 @@ div.imgRedesSociais{
     html, body{
         overflow-x: hidden;
     }
+    .swiper-slide{
+        min-width: 130px;
+        max-height: 120px;
+        margin-left: 14vw;
+    }
+    .front, .front-2, .front-3, .front-4, .front-5{
+        background-size: 130px 120px;
+    }
     .back{
         font-size: 1.7vw;
     }
@@ -1033,7 +1041,7 @@ div.imgRedesSociais{
     }
     .carrossel-3{
         width: 100vw;
-        height: 40vw;
+        height: 50vw;
         gap: 0px;
     }
     .container-slider {
@@ -1061,5 +1069,13 @@ div.imgRedesSociais{
     }
     #prev-button-3, #next-button-3 {
         width: 12vw;
+    }
+    .carrossel{
+        width: 99%;
+        height: 40vw;
+    }
+    .swipper-wrapper{
+        width: 62vw;
+        height: 35vw;
     }
 }
