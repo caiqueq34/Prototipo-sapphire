@@ -266,23 +266,24 @@ h3.tituloCases{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 30vw;
 }
 .swipper-wrapper{
     width: 80vw;
-    height: 20vw;
+    height: 21vw;
     display: flex;
-    padding-left: 2vw;
-    overflow: hidden;
-    gap: 15vw;
+    /*padding-left: 2vw;*/
+    padding: 1%;
+    /*overflow: hidden;*/
+    justify-content: center;
+    justify-items: center;
+    gap: 6vw;
+    padding-bottom: 0px;
 }
 
 .swiper-slide{
     min-width: 215px;
     max-height: 250px;
     margin-top: 3vw;
-    margin-left: 12.5vw;
 }
 .swiper-slide:hover > .card{
     cursor: pointer;
@@ -487,7 +488,7 @@ div.casesLogo{
 div.imgCasesLogo {
     padding: 0%;   
 }
-div.casesAppWeb{
+div#casesAppWeb{
     display: flex;
     position: relative;
     justify-content: center;
@@ -520,7 +521,6 @@ img#casesappweb{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vw;
     gap: 5.5rem;
     margin-bottom: 7vw;
 }
@@ -880,6 +880,12 @@ div.imgRedesSociais{
 }
 /*Media query para desktop*/
 @media screen and (min-width: 1024px) {
+    .carrossel-3{
+        margin-top: 3.5vw;
+    }
+    .titulo-quemsomos{
+        width: 35vw;
+    }
     figure, figure img {
         width: 350px;
         height: 500px;

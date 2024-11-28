@@ -265,25 +265,21 @@ h3.tituloCases{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 99%;
-    height: 17vw;
-
 }
 .swipper-wrapper{
-    width: 90vw;
-    height: 17vw;
+    width: 80vw;
+    height: 21vw;
+    display: flex;
     /*padding-left: 2vw;*/
     padding: 1%;
     /*overflow: hidden;*/
     justify-content: center;
     justify-items: center;
-    gap: 5vw;
-
+    gap: 6vw;
+    padding-bottom: 0px;
 }
 
 .swiper-slide{
-    display: inline-flex;
-    margin-left: 3.5vw;
     min-width: 215px;
     max-height: 300px;
     margin-top: 3vw;
@@ -483,7 +479,7 @@ h3.tituloCases{
 
 /*--------------CASES-------------------*/
 
-div.casesAppWeb{
+div#casesAppWeb{
     display: flex;
     position: relative;
     justify-content: center;
@@ -516,7 +512,6 @@ img#casesappweb{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vw;
     gap: 5.5rem;
     margin-bottom: 7vw;
 }
@@ -871,17 +866,16 @@ div.imgRedesSociais{
     }
 }
 /*Media query para desktop*/
-@media screen and (min-width: 1000px) {
-    .container-slider {
-        width: 60vw;
-        padding-top: 7vw;
+@media screen and (min-width: 1024px) {
+    .carrossel-3{
+        margin-top: 3.5vw;
     }
-    #prev-button, #next-button{
-        width: 7vw;
+    .titulo-quemsomos{
+        width: 35vw;
     }
     figure, figure img {
-        width: 270px;
-        height: 400px;
+        width: 350px;
+        height: 500px;
         margin-top:20px;
         border-radius: 30px;
     }
@@ -949,7 +943,7 @@ div.imgRedesSociais{
         font-size: 1.8vw;
     }
     .txt-animado span::after{
-        height: 180%;
+        height: 200%;
     }
     iframe {
         width: 80vw;
