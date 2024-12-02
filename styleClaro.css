@@ -47,7 +47,7 @@ a.btnNav{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgba(167, 167, 167, 0.8);
+    color: rgba(63, 63, 63, 0.8);
     font-size: 18px;
     letter-spacing: 0.5px;
     padding: 0 10px;
@@ -63,7 +63,7 @@ a.btnNav:after{
     transition: 0.3s;
 }
 a.btnNav:hover{
-    color: rgb(255,255,255);
+    color: rgb(27, 27, 27);
 }
 a.btnNav:hover:after{
     width: 100%;
@@ -1027,7 +1027,7 @@ div.imgRedesSociais{
         flex-direction: column;
         top: 0;
         text-align: center;
-        background-color: #210e4b;
+        background-color: #f1f1f1 !important;
         height: 100%;
         width: 40vw;
         padding: 1em;
