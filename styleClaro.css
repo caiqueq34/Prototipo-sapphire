@@ -18,7 +18,7 @@ html{
 /*-------------------CORPO-DO-SITE----------------*/
 
 body{
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -47,7 +47,7 @@ a.btnNav{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgba(63, 63, 63, 0.8);
+    color: rgba(167, 167, 167, 0.8);
     font-size: 18px;
     letter-spacing: 0.5px;
     padding: 0 10px;
@@ -63,13 +63,13 @@ a.btnNav:after{
     transition: 0.3s;
 }
 a.btnNav:hover{
-    color: rgb(27, 27, 27);
+    color: rgb(255,255,255);
 }
 a.btnNav:hover:after{
     width: 100%;
 }
 
-/*-------------------BOTÃO-DO-LOGIN----------------*/
+/*-------------------BOTÃO-MODO-CLARO/ESCURO----------------*/
 
 .menu-login {
     margin-right: 15px;
@@ -244,71 +244,71 @@ h3.tituloCases{
     font-family:monospace;
     margin-top: 3vw;
 }
+
 /*------------CASES ANIMADOS------------*/
-#prev-button-3, #next-button-3 {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 4vw;
-}
-#prev-button-3 img, #next-button-3 img{
-    width: 100%;
-    height: 100%;
-}
-#prev-button-3{
-    margin-right: 2vw;
-}
-#next-button-3{
-    margin-left: 2vw;
-}
+
+/*--------------CASES LOGOS-------------------*/
 
 .carrossel{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 30%;
 }
 .swipper-wrapper{
     width: 80vw;
-    height: 21vw;
+    height: 25vw;
     display: flex;
-    /*padding-left: 2vw;*/
     padding: 1%;
-    /*overflow: hidden;*/
     justify-content: center;
     justify-items: center;
-    gap: 6vw;
-    padding-bottom: 0px;
+    border-radius: 100%;
 }
-
 .swiper-slide{
     min-width: 215px;
-    max-height: 250px;
+    max-height: 300px;
     margin-top: 3vw;
+    margin-left:2vw;
+    justify-items: auto;
+    border-radius: 100%;
 }
 .swiper-slide:hover > .card{
     cursor: pointer;
     transform: rotateY(180deg);
 }
+/*Div da logo*/
 .card{
-    height: 100%;
-    width: 100%;
+    height: 135%;
+    width: 28%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    padding: 0%;
+    margin-left: 0%;
+    margin-right: 10%;
+    background-color: #f1f1f1 !important;
+    border-radius: 30%;
+    border: #f1f1f1 !important;
+
+}
+.card img{
+    width: 100% !important;
+    height: 100% !important;    
 }
 .front, .back{
     height: 100%;
     width: 100%;
-    border-radius: 30px;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
     border: 3px solid #0cc0df;
+    justify-items: center;
+    border-radius: 30% !important;
 }
 .front{
     background-image: url(img/logografica.jpeg);
     background-repeat: no-repeat;
-    background-size: 290px 290px;
+    background-size: 100% 100% !important;
 }
 .back{
     background-color: #4274fd;
@@ -320,7 +320,8 @@ h3.tituloCases{
     gap: 3vw;
     font-family: monospace;
     color: rgb(255,255,255);
-    
+    justify-items: center;
+    text-align: center;
 }
 .titu-cases{
     font-size: 1.4vw;
@@ -337,11 +338,12 @@ h3.tituloCases{
     position: absolute;
     backface-visibility: hidden;
     border: 3px solid #0cc0df;
+    border-radius: 30% !important;
 }
 .front-2{
     background-image: url(img/logoelvisburger.jpeg);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 100% 100% !important;
 }
 .front-3, .back{
     height: 100%;
@@ -351,11 +353,12 @@ h3.tituloCases{
     position: absolute;
     backface-visibility: hidden;
     border: 3px solid #0cc0df;
+    border-radius: 30% !important;
 }
 .front-3{
     background-image: url(img/logo-charge.png);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 100% 100% !important;
 }
 .front-4, .back{
     height: 100%;
@@ -365,11 +368,12 @@ h3.tituloCases{
     position: absolute;
     backface-visibility: hidden;
     border: 3px solid #0cc0df;
+    border-radius: 30% !important;
 }
 .front-4{
     background-image: url(img/logoslimtech.png);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 100% 100% !important;
 }
 .front-5, .back{
     height: 100%;
@@ -379,54 +383,41 @@ h3.tituloCases{
     position: absolute;
     backface-visibility: hidden;
     border: 3px solid #0cc0df;
+    border-radius: 30% !important;
 }
 .front-5{
     background-image: url(img/logogeekstore.png);
     background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-size: 100% 100% !important;
 }
+/*-------------------------------------------------*/
+
 /*--------------CASES WEB SITES-------------------*/
 
-#prev-button-2, #next-button-2 {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 4vw;
-}
-#prev-button-2 img, #next-button-2 img{
-    width: 100%;
-    height: 100%;
-}
-#prev-button-2{
-    margin-right: 2vw;
-}
-#next-button-2{
-    margin-left: 2vw;
-}
 .carrossel-2{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30vw;
-    gap: 1rem;
+    gap: 1rem;    
 }
 .container-web{
     display: flex;
     width: 80vw;
     justify-content: space-around;
+    margin-top: 3vw;    
     margin-top: 3vw;
+    margin-bottom: 10vw;
 }
 .card-web{
-    width: 25vw;
-    height: 15vw;
-    padding: 2vw 1vw;
-    background-color: #0cc0df;
     position: relative;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
+    border-radius: 100px;    
+    margin-right: 50px !important;
+    margin-left: 0% !important;
 }
 .card-web:hover {
     transform: translateY(20px);
@@ -447,48 +438,8 @@ h3.tituloCases{
 .card-web:hover:before{
     opacity: 1;
 }
-.card-web img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.card-web .info{
-    position: relative;
-    z-index: 3;
-    color: rgb(255,255,255);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s all;
-}
-.card-web:hover .info{
-    opacity: 1;
-    transform: translateY(0px);
-}
-.card-web .info a{
-    text-decoration: none;
-    background-color: #0cc0df;
-    padding: 1vw;
-    border-radius: 10px ;
-    color: rgb(255,255,255);
-    font-family: monospace;
-    font-size: 1.3vw;
-}
 
-/*--------------CASES-------------------*/
-
-div.casesLogo{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    gap: 5vw;
-}
-div.imgCasesLogo {
-    padding: 0%;   
-}
-div#casesAppWeb{
+div.casesAppWeb{
     display: flex;
     position: relative;
     justify-content: center;
@@ -515,12 +466,46 @@ img#casesappweb{
     border: 2px solid #FCF6DB;
     border-radius: 30px;
 }
-
+/*Bootstrap*/
+.carousel-item .info{
+    position: relative;
+    z-index: 3;
+    color: rgb(255,255,255);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    margin-top: 60%;
+}
+.carousel-item:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.carousel-item .info a{
+    text-decoration: none;
+    background-color: #b2c4ec;
+    padding: 1vw;
+    border-radius: 10px ;
+    color: rgb(255,255,255);
+    font-family: monospace;
+    font-size: 1.3vw;
+}
+.carousel-item img{
+    width: 35vw;
+    height: 25vw;
+    object-fit: cover;
+    position: absolute;
+    display:flex;
+    top: 0;
+    margin-right: 50px !important;
+    margin-left: 0% !important;
+    margin-bottom: 10%;
+  }
 /*-------------------CASES APP----------------*/
 .carrossel-3{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2vw;
     gap: 5.5rem;
     margin-bottom: 7vw;
 }
@@ -530,41 +515,57 @@ img#casesappweb{
     height: 29vw;
     align-items: center;
     justify-content: center;
-  }
-  
+  }  
   .container-images {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 800px;
-  }
-  
+    width: 1000px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }  
   .slider {
     opacity: 0;
     transition: opacity .2s;
     position: absolute;
     width: 100%;
     border-radius: 10px;
-  }
-  
+  }  
   .on {
     opacity: 1;
-  }
-  
+  }  
   #prev-button, #next-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    width: 4vw;
-  }
-  
+    width: 3.5vw; 
+  }  
   #prev-button img, #next-button img {
-    width: 100%;
-    height: 100%;
+    width: 50% !important;
+    height: 30% !important;
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
-
+  #prev-button, #next-button:hover{
+    border: none;
+    cursor: pointer;
+    box-shadow:inset;
+    transform: scale(1.1);
+}
+#carousel-control-prev {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 3.5vw; 
+  }
+  #carousel-control-prev:hover{
+    border: none;
+    cursor: pointer;
+    box-shadow:inset;
+    transform: scale(1.1);
+}
 /*-------------------CLIENTES----------------*/
+
 
 div.imgClientes
 {
@@ -584,6 +585,9 @@ img#clientes{
     width: 15vw;
     color: #156cdf;
     text-align: center;
+}
+.btnClientes{
+    text-decoration: none;
 }
 
 /*-----------------QUEM-SOMOS--------------*/
@@ -704,6 +708,7 @@ div .img3 {
     display: inline-block;   
 }
 
+
 /*-----------------LOCALIZAÇÃO--------------*/
 
 .titulo-localizacao{
@@ -733,7 +738,6 @@ iframe{
 }
 
 /*-----------------RODAPÉ--------------*/
-
 
 footer{
     background-color: #000;
@@ -790,7 +794,7 @@ div.imgRedesSociais{
 }
 
 .btn-header, .btn-header-x{
-   display: none;
+    display: none;
 }
 
 .menu-icon, .menu-icon-x{
@@ -802,7 +806,7 @@ div.imgRedesSociais{
     display: flex;
     align-items: center;
     z-index: 2;
-    gap: 5em;
+    gap: 7rem;
     margin-left: -12vw;
 }
 
@@ -865,7 +869,7 @@ div.imgRedesSociais{
     }
 }
 @media screen and (min-width: 1500px) {
-    .back, .back-2, .back-3, .back-4, .back-5{
+    .back{
         font-size: 1vw;
     }
     .titulo-clientes{
@@ -879,23 +883,29 @@ div.imgRedesSociais{
     }
 }
 /*Media query para desktop*/
-@media screen and (min-width: 1024px) {
-    .carrossel-3{
-        margin-top: 3.5vw;
+@media screen and (min-width: 1000px) {
+    .container-slider {
+        width: 60vw;
+        padding-top: 7vw;
     }
-    .titulo-quemsomos{
-        width: 35vw;
+    #prev-button, #next-button{
+        width: 7vw;
     }
     figure, figure img {
-        width: 350px;
-        height: 500px;
+        width: 270px;
+        height: 400px;
+        margin-top:20px;
+        border-radius: 30px;
+    }
+    #logoNav{
+        margin-right: 120px;
     }
     .nav-header{
-        gap: 2rem;
+        gap: 1.4vw;
     }
-    .container{
-        width: 250px;
-        height: 250px;
+    .swiper-slide{
+        width: 500px;
+        height: 500px;
     }
     .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 216px 250px;
@@ -959,7 +969,7 @@ div.imgRedesSociais{
         font-size: 1.8vw;
     }
     .txt-animado span::after{
-        height: 200%;
+        height: 180%;
     }
     iframe {
         width: 80vw;
@@ -1001,6 +1011,7 @@ div.imgRedesSociais{
     #titulo-div-home {
         font-size: 2.7vw;
     }
+
     #seta{
         width: 9vw;
     }
@@ -1016,7 +1027,7 @@ div.imgRedesSociais{
         flex-direction: column;
         top: 0;
         text-align: center;
-        background-color: #a6bee0;
+        background-color: #210e4b;
         height: 100%;
         width: 40vw;
         padding: 1em;

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleClaro.css"><!-- VINCULANDO CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"><!--BOOTSTRAP-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <link rel="shortcut icon" href="img/logo-removebg-preview.png" type="image/x-icon">
     <link rel="icon" href="img/logo-horizontal.png" /><!-- ICONE DA EMPRESA -->
 
@@ -28,7 +32,7 @@
 
                 <li><a href="#" class="btnNav">Home</a></li><!-- "a href" CONECTANDO AS OPÇOES DA BARRA AOS TÓPICOS E ROLANDO AO CLICAR -->
             
-                <li><a href="#cases" class="btnNav">Cases</a></li>
+                <li><a href="#casesSec" class="btnNav">Cases</a></li>
             
                 <li><a href="#cliente" class="btnNav">Clientes</a></li>
             
@@ -38,7 +42,7 @@
             
                 <li><a href="#localizacao" class="btnNav">Localização</a></li> 
             
-                <a href="index.html" style="text-decoration: none;"><div class="menu-login">◐</div></a>
+                <a href="indexClaro.html" style="text-decoration: none;"><div class="menu-login">◑</div></a>
             </div>    
         </ul>       
     </div>
@@ -70,128 +74,208 @@
     <a href="#"><img id="seta" src="img/icons8-seta-para-cima-100.png"></a>
 
     <!-- CASES -->
-
-    <div id="cases">
-        <h3 class="tituloCases">Logos</h3> 
-        <!-- SEPARANDO TÓPICOS EM CADA "DIV" -->         
-        <div class="carrossel">
-            <!-- <button id="prev-button-3"><img src="img/seta-ante.png" alt="prev-button"></button> -->
-            <div class="swipper-wrapper">       
-                <div class="swiper-slide">
-                    <div class="card">
-                        <div class="front"></div>
-                        <div class="back">
-                            <h1 class="titu-cases">ML4 Digital</h1>
-                            <p class="txt-cases">Uma gráfica digital especializada em impressões de todos os tipos</p>
+    <!-- LOGOS -->
+    <!-- TESTE bootstrap -->
+    <h3 class="tituloCases">Logos</h3>
+    <div id="destaqueCarousel1" class="carousel slide" data-bs-ride="carousel">
+        <section id="casesSec"> 
+        <div class="container-web">
+            <!-- Logo 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="front"></div>
+                            <div class="back">
+                                <h1 class="titu-cases">ML4 Digital</h1>
+                                <p class="txt-cases">Uma gráfica digital especializada em impressões de todos os tipos</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <div class="front-2"></div>
-                        <div class="back">
-                            <h1 class="titu-cases">Elvis Burguer</h1>
-                            <p class="txt-cases">Uma hamburgueria especializada em hamburgueres artesanais</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <div class="front-3"></div>
-                        <div class="back">
-                            <h1 class="titu-cases">Charge</h1>
-                            <p class="txt-cases">Uma locadora de veículos especializada em veículos elétricos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <div class="front-4"></div>
-                        <div class="back">
-                            <h1 class="titu-cases">Slim Tech</h1>
-                            <p class="txt-cases">Uma assistência técnica especializada em manutenção de celulares</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <div class="front-5"></div>
-                        <div class="back">
-                            <h1 class="titu-cases">Geek Store</h1>
-                            <p class="txt-cases">Uma loja Geek especializada em produtos personalizados</p>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <!-- <button id="next-button-3"><img src="img/seta-prox.png"></button> -->
-        </div>
-
-        <!--Cases-->
-
-        <h3 class="tituloCases">WebSites</h3>
-        <div class="carrossel-2">
-            <!-- <button id="prev-button-2"><img src="img/seta-ante.png" alt="prev-button"></button> -->
-            <div class="casesWebSites">
-                <div class="container-web">
-                    <div class="card-web">
-                        <img src="img/site1-formato2.PNG">
-                        <div class="info">
-                        <a href="https://luizvital0001.github.io/Site-Gr-fica-Digital/index.html" class="linkSite">
-                                Conheça o site!
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-web">
-                        <img src="img/site2-formato2.PNG">
-                        <div class="info">
-                            <a href="https://caiqueq34.github.io/SiteOK/" class="linkSite">
-                                Conheça o site!
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-web">
-                        <img src="img/site3-formato2.PNG">
-                        <div class="info">
-                            <a href="https://davin4sciment0.github.io/Charge/" class="linkSite">
-                                Conheça o site!
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-web">
-                        <img src="img/site4-formato4.PNG">
-                        <div class="info">
-                            <a href="https://kevinbandeira.github.io/SlimTech/" class="linkSite">
-                                Conheça o site!
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-web">
-                        <img src="img/site5-formato5.PNG">
-                        <div class="info">
-                            <a href="https://kevinbandeira.github.io/arroz/" class="linkSite">
-                                Conheça o site!
-                            </a>
-                        </div>
-                    </div>
+                    </div>                                                  
                 </div>
             </div>
-            <!-- <button id="next-button-2"><img src="img/seta-prox.png"></button> -->
+            <!-- Logo 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="front-2"></div>
+                            <div class="back">
+                                <h1 class="titu-cases">Elvis Burguer</h1>
+                                <p class="txt-cases">Uma hamburgueria especializada em hamburgueres artesanais</p>
+                            </div>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
+            <!-- Logo 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="front-3"></div>
+                            <div class="back">
+                                <h1 class="titu-cases">Charge</h1>
+                                <p class="txt-cases">Uma locadora de veículos especializada em veículos elétricos</p>
+                            </div>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
+            <!-- Logo 4 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="front-4"></div>
+                            <div class="back">
+                                <h1 class="titu-cases">ML4 Digital</h1>
+                                <p class="txt-cases">Uma gráfica digital especializada em impressões de todos os tipos</p>
+                            </div>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
+            <!-- Logo 5 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="front-5"></div>
+                            <div class="back">
+                                <h1 class="titu-cases">Geek Store</h1>
+                                <p class="txt-cases">Uma loja Geek especializada em produtos personalizados</p>
+                            </div>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
         </div>
-        
+        <!-- Controles Logo -->
+        <a class="carousel-control-prev" href="#destaqueCarousel1" role="button" data-bs-slide="prev">
+            <img src="img/seta-ante.png">
+        </a>
+        <a class="carousel-control-next" href="#destaqueCarousel1" role="button" data-bs-slide="next">
+            <img src="img/seta-prox.png">
+        </a>
+    </div>   
+    <!--FIM BOOTSTRAP LOGOS-->
+    </section></br>
+    
+    <!-- CASES -->
+    <!-- TESTE WEBSITES -->
+    <h3 class="tituloCases">WebSites</h3>
+    <div id="destaqueCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="container-web">
+            <!-- Site 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                        <img src="img/site1-formato2.PNG"
+                             class="card-web"
+                             alt="Destaque 4">
+                        <br />
+                        <div class="info">
+                        <a href="https://davin4sciment0.github.io/Charge/" class="linkSite">
+                            Conheça o site!
+                        </a>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <!-- Site 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                        <img src="img/site2-formato2.PNG"
+                             class="card-web"
+                             alt="Destaque 4">
+                        <br />
+                        <div class="info">
+                        <a href="https://caiqueq34.github.io/SiteOK/" class="linkSite">
+                            Conheça o site!
+                        </a>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <!-- Site 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                        <img src="img/site3-formato2.PNG"
+                             class="card-web"
+                             alt="Destaque 4">
+                        <br />
+                        <div class="info">
+                        <a href="https://davin4sciment0.github.io/Charge/" class="linkSite">
+                            Conheça o site!
+                        </a>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <!-- Site 4 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                        <img src="img/site4-formato4.PNG"
+                             class="card-web"
+                             alt="Destaque 4">
+                        <br />
+                        <div class="info">
+                        <a href="https://kevinbandeira.github.io/SlimTech/" class="linkSite">
+                            Conheça o site!
+                        </a>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <!-- Site 5 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                        <img src="img/site5-formato5.PNG"
+                             class="card-web"
+                             alt="Destaque 4">
+                              <h2 class="mt-3"></h2>
+                        <br />
+                        <div class="info">
+                        <a href="https://kevinbandeira.github.io/arroz/" class="linkSite">
+                            Conheça o site!
+                        </a>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+        </div>
+        <!-- Controles WebSite -->
+        <a class="carousel-control-prev" href="#destaqueCarousel" role="button" data-bs-slide="prev">
+            <img src="img/seta-ante.png">
+        </a>
+        <a class="carousel-control-next" href="#destaqueCarousel" role="button" data-bs-slide="next">
+            <img src="img/seta-prox.png">
+        </a>
+    </section>
+    </div>
+    <!--FIM BOOTSTRAP WEBSITE-->        
+            
+    <!-- CASES CLIENTES -->
         <h3 class="tituloCases">Aplicativo Web</h3>
         <div class="carrossel-3">
-            <button id="prev-button"><img src="img/seta-ante.png"></button>
+            <button id="prev-button"><img src="img/seta-ante.png" alt="prev-button"></button>
             <div class="container-slider">
                 <div class="container-images">
-                    <img src="img/appweb1.jpg" alt="app" class="slider on">
+                    <img src="img/appweb4.jpg" alt="app" class="slider on">
                     <img src="img/appweb2.jpg" alt="app" class="slider">
                     <img src="img/appweb3.jpg" alt="app" class="slider">
-                    <img src="img/appweb4.jpg" alt="app" class="slider">
+                    <img src="img/appweb1.jpg" alt="app" class="slider">
                 </div>
             </div>
             <button id="next-button"><img src="img/seta-prox.png" alt="next-button"></button>
         </div>
-    </div>
+    </div></br></br></br></br>
+    <!-- FIM CASES -->
 
     <!-- CLIENTES -->
 
@@ -227,7 +311,7 @@
             </a>     
         </div>
         </section>
-    </div>     
+    </div>    
 
     <!-- QUEM SOMOS -->
 
@@ -336,6 +420,6 @@
             <p class="textoFooter" id="emailFooter">sapphirecode@gmail.com</p>
         </div>
     </footer>
-    <script src="scriptClaro.js"></script> <!-- VINCULANDO O JAVASCRIPT -->
+    <script src="script.js"></script> <!-- VINCULANDO O JAVASCRIPT -->
 </body> <!-- ENCERRANDO CORPO DO TEXTO -->
 </html>
