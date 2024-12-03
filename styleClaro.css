@@ -115,7 +115,7 @@ a.btnNav:hover:after{
 .txt-animado span::after{
     content: "";
     position: absolute;
-    height: 100% ;
+    height: 120% ;
     border-left: 2px solid #156cdf;
     right: -10px;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
@@ -268,7 +268,6 @@ h3.tituloCases{
     min-width: 215px;
     max-height: 300px;
     margin-top: 3vw;
-    margin-left:2vw;
     justify-items: auto;
     border-radius: 100%;
 }
@@ -324,10 +323,10 @@ h3.tituloCases{
     text-align: center;
 }
 .titu-cases{
-    font-size: 1.4vw;
+    font-size: 2vw;
 }
 .txt-cases{
-    font-size: 0.9vw;
+    font-size: 1.5vw;
     padding: 0.5vw;
 }
 .front-2, .back{
@@ -402,12 +401,11 @@ h3.tituloCases{
     height: 30vw;
     gap: 1rem;    
 }
-.container-web{
+.container-web, .container-web-1{
     display: flex;
-    width: 80vw;
+    width: 78vw;
     justify-content: space-around;
     margin-top: 3vw;    
-    margin-top: 3vw;
     margin-bottom: 10vw;
 }
 .card-web{
@@ -474,7 +472,7 @@ img#casesappweb{
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s all;
-    margin-top: 60%;
+    margin-top: 70%;
 }
 .carousel-item:hover .info{
     opacity: 1;
@@ -482,9 +480,10 @@ img#casesappweb{
 }
 .carousel-item .info a{
     text-decoration: none;
-    background-color: #b2c4ec;
+    background-color: #0cc0df;
     padding: 1vw;
-    border-radius: 10px ;
+    border-radius: 15px;
+    margin-left: 12vw;
     color: rgb(255,255,255);
     font-family: monospace;
     font-size: 1.3vw;
@@ -522,7 +521,7 @@ img#casesappweb{
     align-items: center;
     justify-content: center;
     width: 1000px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-bottom: 20px;
   }  
   .slider {
@@ -924,6 +923,10 @@ div.imgRedesSociais{
         max-height: 120px;
         margin-left: 14vw;
     }
+    .card{
+        width: 50vw;
+        height: 60vw;
+    }
     .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 130px 120px;
     }
@@ -969,7 +972,7 @@ div.imgRedesSociais{
         font-size: 1.8vw;
     }
     .txt-animado span::after{
-        height: 180%;
+        height: 240%;
     }
     iframe {
         width: 80vw;
@@ -989,9 +992,6 @@ div.imgRedesSociais{
     img#clientes{
         width: 30vw;
     }
-    h3.tituloCases {
-        font-size: 4vw;
-    }
     img#homepage {
         width: 30vw;
         height: 30vw;
@@ -999,7 +999,7 @@ div.imgRedesSociais{
     }
     div.containerHome {
         width: 70vw;
-        height: 32vw;
+        height: 40vw;
         border-radius: 40px;
     }
     p.txtHome {
@@ -1061,6 +1061,8 @@ div.imgRedesSociais{
         width: 100vw;
         height: 40vw;
         gap: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .container-slider {
         width: 50vw;
@@ -1095,5 +1097,18 @@ div.imgRedesSociais{
     .swipper-wrapper{
         width: 62vw;
         height: 35vw;
+    }
+    .container-web-1{
+        width: 21vw;
+        height: 60vw;
+    }
+    .container-web{
+        height: 60vw;
+        width: 57vw;
+    }
+    .carousel-item img{
+        width: 65vw;
+        height: 57vw;
+        border-radius: 80px;
     }
 }
