@@ -918,7 +918,7 @@ div.imgRedesSociais{
     }
     .card{
         width: 50vw;
-        height: 60vw;
+        height: 55vw;
     }
     .front, .front-2, .front-3, .front-4, .front-5{
         background-size: 130px 120px;
@@ -992,7 +992,7 @@ div.imgRedesSociais{
     }
     div.containerHome {
         width: 70vw;
-        height: 40vw;
+        height: 42vw;
         border-radius: 40px;
     }
     p.txtHome {
@@ -1100,5 +1100,14 @@ div.imgRedesSociais{
         width: 65vw;
         height: 57vw;
         border-radius: 80px;
+    }
+    .carousel-item .info a{
+        padding: 3vw;
+        font-size: 3vw;
+        border-radius: 30px;
+    }
+    #prev-button img, #next-button img {
+        width: 90% !important;
+        height: 60% !important;
     }
 }
